@@ -1,0 +1,108 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html, body { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+html, body { font-family: 'Inter var', sans-serif; }
+}
+.unstyled {
+    list-style: none;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.site-header .navbar {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+}
+.site-header .nav-content {
+        display: flex;
+        align-items: center;
+    }
+.site-header .navbar-toggler i {
+    -webkit-transition: 400ms transform ease;
+    transition: 400ms transform ease;
+}     
+.site-header .navbar-toggler[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+.navbar-filler {
+        flex-grow: 1;
+    }
+@media screen and (max-width: 767px) {
+    .navbar-collapse {
+        margin-top: 20px;
+    }
+}
+.social-links {
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+@media screen and (min-width: 992px) {
+    .social-links {
+        order: 2;
+        margin-left: 20px;
+    }
+}
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-links li:last-child {
+    margin-right: 0px;
+}
+.social-links li a svg {
+    width: 20px;
+}
+.localnav .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    color: #333;
+}
+.site-content ul {
+    margin-top: 1rem;
+}
+.site-content-wrapper {
+    padding: 40px 1rem;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.site-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.snippet p {
+    margin-bottom: 0px;
+}
+.divider {
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin: 40px 0;
+    width: 100%;
+    height: 2px;
+}
+@media screen and (min-width: 768px) {
+    #mobile {
+        display: none;
+    }
+}
+.spacing {
+    height: 10px;
+}
+.resume-main {
+    width: 60%;
+}
+.resume-sidebar {
+    width: 35%;
+}
+@media screen and (max-width: 767px) {
+    .resume-main, .resume-sidebar {
+        width: 100%;
+    }
+}
