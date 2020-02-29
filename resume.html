@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>Bryan Ramos</title>
+        <style type="text/css">
+            @import url('https://rsms.me/inter/inter.css');
+
+            html, body { font-family: 'Inter', sans-serif; }
+            @supports (font-variation-settings: normal) {
+            html, body { font-family: 'Inter var', sans-serif; }
+            }
+            .unstyled {
+                list-style: none;
+                margin: 0 0 1rem 0;
+                padding: 0;
+            }
+            .site-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+            .site-header .navbar {
+                max-width: 1050px;
+                margin: 0 auto;
+                padding: 1.5rem 1rem;
+                justify-content: center;
+            }
+            .site-header .nav-content {
+                    display: flex;
+                    align-items: center;
+                }
+            .site-header .navbar-toggler i {
+                -webkit-transition: 400ms transform ease;
+                transition: 400ms transform ease;
+            }     
+            .site-header .navbar-toggler[aria-expanded="true"] i {
+                transform: rotate(180deg);
+            }
+            .navbar-filler {
+                    flex-grow: 1;
+                }
+            @media screen and (max-width: 767px) {
+                .navbar-collapse {
+                    margin-top: 20px;
+                }
+            }
+            .social-links {
+                margin: 0 20px 0 0;
+                padding: 0;
+            }
+            @media screen and (min-width: 992px) {
+                .social-links {
+                    order: 2;
+                    margin-left: 20px;
+                }
+            }
+            .social-links li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .social-links li:last-child {
+                margin-right: 0px;
+            }
+            .social-links li a svg {
+                width: 20px;
+            }
+            .localnav .navbar-nav .nav-link {
+                font-size: 0.9rem;
+                color: #333;
+            }
+            .site-content ul {
+                margin-top: 1rem;
+            }
+            .site-content-wrapper {
+                padding: 40px 1rem;
+                max-width: 1050px;
+                margin: 0 auto;
+            }
+            .site-content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .snippet p {
+                margin-bottom: 0px;
+            }
+            .divider {
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+                margin: 40px 0;
+                width: 100%;
+                height: 2px;
+            }
+            @media screen and (min-width: 768px) {
+                #mobile {
+                    display: none;
+                }
+            }
+            .spacing {
+                height: 10px;
+            }
+            .resume-main {
+                width: 60%;
+            }
+            .resume-sidebar {
+                width: 35%;
+            }
+            @media screen and (max-width: 767px) {
+                .resume-main, .resume-sidebar {
+                    width: 100%;
+                }
+            }
+        </style>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="site-title">
+                    <a title="Bryan Ramos" href="/">
+                        Bryan Ramos
+                    </a>
+                </div>
+                <div class="navbar-filler"></div>
+
+                    <ul class="social-links">
+                        <li>
+                            <a title="Github" href="https://github.com/bryanramos">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="Linkedin" href="https://www.linkedin.com/in/bryanramos">
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="material-icons">arrow_downward</i>
+                    </button>
+                <div class="navbar-collapse collapse" id="main-navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="site-content">
+            <div class="site-content-wrapper">
+                <div class="resume-main">
+                    <h2>Education</h2>
+                    <div class="snippet">
+                        <p>The University of Texas at El Paso (UTEP)</p>
+                        <p>Bachelor of Science in Computer Science</p>
+                        <ul>
+                            <li>Expected Graduation Date: May 2021</li>
+                            <li>Overall GPA: 3.35/4.00</li>
+                            <li>Major GPA: 3.78/4.00</li>
+                            <li>Related Courses: Elementary Data Structures & Algorithms, Data Structures, Discrete Math, Calculus I,
+                                Computer Architecture I, Automata, Advanced OOP
+                            </li>
+                            <li>Dean's List: Fall 2017, Spring 2018</li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <h2>Professional Experience</h2>
+                    <div class="snippet">
+                        <p><strong>Microsoft Corporation</strong>, Redmond, WA</p>
+                        <p><i>Explore Intern</i>, May 2019 - August 2019</p>
+                        <ul>
+                            <li>Following SCRUM methodology, in a team pod of 3, engineered APIs that interact with a REST service that manages role permissions and data for entities that want to engage with Microsoft.</li>
+                            <li>Created Development Specifications documentation to highlight requirements, and using this model wrote APIs in C# and Newtonsoft in Visual Studio and by following company practices and testing.</li>
+                        </ul>
+                    </div>
+                    <div class="spacing"></div>
+                    <div class="snippet">
+                        <p><strong>Vaco San Francisco</strong>, El Paso, TX</p>
+                        <p><i>Google Student Innovator for Google Cloud Platform (GCP)</i>, July 2018 - May 2019</p>
+                        <ul>
+                            <li>Member of a selected team of 200 students operated as GCP advocates for their university.</li>
+                            <li>Promoted opportunities for students and professors to develop new skills and apply Google’s cloud solutions.</li>
+                            <li>Reported directly to management working with Google tools as well as organized events using Google collaborative tools and created promotional content using Adobe’s Creative Suite.</li>
+                        </ul>
+                    </div>
+                    <div class="spacing"></div>
+                    <div class="snippet">
+                        <p><strong>Bryan Ramos d/b/a Ramos Digital Solutions</strong>, El Paso, TX</p>
+                        <p><i>Freelance Web Development, Marketing and Technology Advising</i>, July 2017 - Present</p>
+                        <ul>
+                            <li>Webmaster for non-profit website running WordPress and using Bootstrap, writing custom HTML, PHP and JS code for core functionality and UI/UX design.</li>
+                            <li>Manages websites for small businesses in the El Paso area, building custom WordPress themes and following standard SEO practices to deliver unique designs and marketing of a product or service.</li>
+                            <li>Executed QA tests using search engine webmaster consoles and optimization engines for discovery of bugs, content compression and universal usability.</li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <h2>Activities and Honors</h2>
+                    <div class="snippet">
+                        <ul>
+                            <li>Technology Advisor for the Texas Technology Student Association non-profit organization.</li>
+                            <li>Volunteer at Nuevo Foundation helping inspire kids through code.</li>
+                            <li>Participated in Microsoft internal hackathon to build fun ways for kids to learn to program.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="divider" id="mobile"></div>
+                <div class="resume-sidebar">
+                    <h2>Skills & Qualifications</h2>
+                    <h5>Languages</h5>
+                    <ul class="unstyled">
+                        <li>Java (3yrs)</li>
+                        <li>C (2yrs)</li>
+                        <li>Python (1yr)</li>
+                        <li>C# (4mos)</li>
+                        <li>Newtonsoft (3mos)</li>
+                        <li>HTML (4yrs), CSS (4yrs)</li>
+                        <li>JavaScript (3yrs)</li>
+                        <li>PHP (3yrs)</li>
+                        <li>SQL (1yr)</li>
+                        <li>Basic Swift and C++</li>
+                    </ul>
+                    <h4>Frameworks</h4>
+                    <ul class="unstyled">
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <h4>Tools</h4>
+                    <ul class="unstyled">
+                        <li>Visual Studio</li>
+                        <li>Visual Studio Code</li>
+                        <li>Visual Studio Team Services (Azure DevOps)</li>
+                        <li>Eclipse</li>
+                        <li>Dreamweaver, Brackets</li>
+                        <li>PowerShell, CLIs</li>
+                        <li>Emacs</li>
+                        <li>Terminal</li>
+                    </ul>
+                    <h4>Other</h4>
+                    <ul class="unstyled">
+                        <li>WordPress</li>
+                        <li>Web Content Optimization (3yrs)</li>
+                        <li>iOS 7-13, Windows XP-10, Android 5-10, Mac OS X, Ubuntu</li>
+                        <li>SCRUM methodology & sprints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+        jQuery(document).ready(function($) {
+            // When the window resizes
+            $(window).on('resize', function () {
+                    // Get the height + padding + border of `#masthead`
+                    var mastHeight = $('.site-header').outerHeight(); // if not vendors page header 
+
+                // Add the height to `.site-content`
+                $('body').css('margin-top', mastHeight); 
+            });
+
+            // Trigger the function on document load.
+            $(window).trigger('resize');
+        });
+    </script>
+</html>
