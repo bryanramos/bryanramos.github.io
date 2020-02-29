@@ -1,1 +1,99 @@
-{Placeholder}
+<html>
+    <head>
+        <title>Bryan Ramos</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="site-title">Bryan Ramos</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse" id="main-navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="site-content">
+            <div class="site-content-wrapper">
+                <h2>Education</h2>
+                <div class="snippet">
+                    <p>The University of Texas at El Paso (UTEP)</p>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <ul>
+                        <li>Expected Graduation Date: May 2021</li>
+                        <li>Overall GPA: 3.35/4.00</li>
+                        <li>Major GPA: 3.78/4.00</li>
+                        <li>Related Courses: Elementary Data Structures & Algorithms, Data Structures, Discrete Math, Calculus I,
+                            Computer Architecture I, Automata, Advanced OOP
+                        </li>
+                        <li>Dean's List: Fall 2017, Spring 2018</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        
+    </body>
+    <style type="text/css">
+        @import url('https://cdn.jsdelivr.net/npm/cf-gotham-fonts@1.0.0/gotham-font.css');
+
+        body {
+            font-family: "GothamHTF", Arial, Helvetica, sans-serif;
+        }
+        .site-header .localnav { /* local nav for individual pages */
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            z-index: 55;
+        }
+        .site-header .navbar {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem;
+        }
+        .site-header .navbar-toggler i {
+            -webkit-transition: 400ms transform ease;
+            transition: 400ms transform ease;
+        }     
+        .site-header .navbar-toggler[aria-expanded="true"] i {
+            transform: rotate(180deg);
+        }
+        .localnav .navbar-nav .nav-link {
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .site-content-wrapper {
+            padding: 40px 1rem;
+            max-width: 1050px;
+            margin: 0 auto;
+        }
+        .snippet p {
+            margin-bottom: 0px;
+        }
+        .divider {
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            margin: 40px 0;
+            width: 100%;
+            height: 2px;
+        }
+
+    </style>
+</html>
+
